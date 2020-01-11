@@ -1,0 +1,60 @@
+h2, h3 {
+    margin: 5px 10px;
+}
+
+h2 {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+h3 {
+    border-bottom: 1px solid;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div {
+    padding: 1px 10px 1px 10px;
+    color: whitesmoke;
+}
+
+a {
+    color: whitesmoke;
+}
+
+#content {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#main-title-box {
+    background-color: #6a00ff;
+    margin: 5px 0;
+}
+
+#main-title {
+    color: rgb(50, 50, 50);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body div:nth-child(odd) {
+    background-color: #1ba1e2;
+}
+
+body div:nth-child(even) {
+    background-color: #fa6800;
+}
+
+#funny-element {
+    border: 1px solid purple;
+    box-sizing: border-box;
+    height: 250px;
+    margin: 5px 3px 2px 7px;
+    padding: 4px 3px 2px;
+    width: 400px;
+}

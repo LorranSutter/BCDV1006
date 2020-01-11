@@ -2,21 +2,84 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="notes.css">
         <title>Lorran Sutter</title>
     </head>
-    <body>
-        <h2>Lab 2: 2 HTML Practice</h2>
+    <body id="content">
+        <div id="main-title-box">
+            <h2 id="main-title">Lab #2: HTML Practice</h2>
+        </div>
 
-        <h3>Client / server</h3>
-        <p>A client any type of user that access a service in the web. This service is provided by another computer called server.</p>
-        <p>Client server model is system that establish communication between servers and clients through computer network (source: <a href = "https://medium.com/@seancsutton1/client-server-model-e485b2666fc0">medium</a>).</p>
+        <div id="client-server">
+            <h3>Client / server</h3>
+            <p>A client any type of user that access a service in the web. This service is provided by another computer called server.</p>
+            <p>Client server model is system that establish communication between servers and clients through computer network (source: <a href = "https://medium.com/@seancsutton1/client-server-model-e485b2666fc0">medium</a>).</p>
+        </div>
         
-        <h3>HTML tags</h3>
-        <p>Tags are hidden keywords used to organize and define where the elements will be in a web page (source: <a href = "http://www.simplehtmlguide.com/whatishtml.php">simplehtmlguide</a>).</p>
-        <p>There are lots of different tags for different purpose, such as <code>img</code> to index an image or <code>body</code> to define the main part of the web page.</p>
+        <div id="html-tags">
+            <h3>HTML tags</h3>
+            <p>Tags are hidden keywords used to organize and define where the elements will be in a web page (source: <a href = "http://www.simplehtmlguide.com/whatishtml.php">simplehtmlguide</a>).</p>
+            <p>There are lots of different tags for different purpose, such as <code>img</code> to index an image or <code>body</code> to define the main part of the web page.</p>
+        </div>
         
-        <h3>Git</h3>
-        <p>Git is a version control system widely used among programmers to manage their codes (source: <a href = "https://en.wikipedia.org/wiki/Git">wikipedia</a>).</p>
-        <p>It ensures that every modification will be saved in the history of git so as to blame some workmate for wrong code.</p>
+        <div id="git">
+            <h3>Git</h3>
+            <p>Git is a version control system widely used among programmers to manage their codes (source: <a href = "https://en.wikipedia.org/wiki/Git">wikipedia</a>).</p>
+            <p>It ensures that every modification will be saved in the history of git so as to blame some workmate for wrong code.</p>
+        </div>
+
+        <div id="main-title-box">
+            <h2 id="main-title">Lab #3: Intro CSS and the box model</h2>
+        </div>
+        
+        <div id="calculate-box-model">
+            <h3>How to calculate the width and height of an element using the box-model?</h3>
+            <p>In CSS the box-model have four different parts: <i>margin, border, padding</i> and <i>content</i>. Each layer wrapped by the previous one starting with <i>margin</i>.</p>
+            <p>The first three parts have top, right, bottom and left thickness. And <i>content</i> have only <i>width</i> and <i>height</i>.</p>
+            <p>As long as <i>margin</i> layer do not belongs to the element, its thickness is not considered to calculate element width and height (source: <a href="https://www.w3schools.com/css/css3_box-sizing.asp">w3schools</a>).</p>
+            <p>So, to calculate the total width of the element you must sum the width of the <i>content</i> with the left and right thickness of <i>padding</i> and <i>border</i>.</p>
+            <p>To calculate the height, you must do the same process, however sum top and bottom thickness with the <i>content</i> height.</p>
+        </div>
+
+        <div id="funny-element">
+            <h3>Funny element</h3>
+            <code>
+
+                div { <br/>
+                &nbsp;border: 1px solid purple; <br/>
+                &nbsp;box-sizing: border-box; <br/>
+                &nbsp;height: 250px; <br/>
+                &nbsp;margin: 5px 3px 2px 7px; <br/>
+                &nbsp;padding: 4px 3px 2px; <br/>
+                &nbsp;width: 400px; <br/>
+                }
+                </code>
+        </div>
+
+        <div id="what-size">
+            <code>
+
+                div { <br/>
+                &nbsp;border: 1px solid purple; <br/>
+                &nbsp;box-sizing: content-box; <br/>
+                &nbsp;height: 250px; <br/>
+                &nbsp;margin: 5px 3px 2px 7px; <br/>
+                &nbsp;padding: 4px 3px 2px; <br/>
+                &nbsp;width: 400px; <br/>
+                }
+            </code>
+
+            <h3>What is the total height and total width of the element?</h3>
+            <ul>
+                <li>Element height: 258px</li>
+                <li>Element width: 408px</li>
+            </ul>
+
+            <h3>What is the height and width of the content area?</h3>
+            <ul>
+                <li>Height content: 250px</li>
+                <li>Width content: 400px</li>
+            </ul>
+        </div>
     </body>
 </html>
