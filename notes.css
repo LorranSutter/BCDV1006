@@ -24,6 +24,25 @@ a {
     color: whitesmoke;
 }
 
+.nav-bar {
+    background-color: rgb(189, 189, 189);
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-element {
+    display: inline-block;
+    padding: 15px;
+}
+
+.nav-element:hover {
+    background-color: gray;
+}
+
 #content {
     margin-top: 0;
     margin-bottom: 0;
