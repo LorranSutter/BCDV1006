@@ -51,12 +51,12 @@ a {
     width: 80%;
 }
 
-#main-title-box {
+#main-title-box, .main-title-box {
     background-color: #6a00ff;
     margin: 5px 0;
 }
 
-#main-title {
+#main-title, .main-title {
     color: rgb(50, 50, 50);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -76,4 +76,12 @@ body div:nth-child(even) {
     margin: 5px 3px 2px 7px;
     padding: 4px 3px 2px;
     width: 400px;
+}
+
+#columns {
+    padding: 20px;
+    margin: 20px;
+    column-count: 3;
+    column-gap: 2em;
+    column-rule: 1px dotted;
 }

@@ -14,12 +14,12 @@
             </ul>
         </nav>
 
-        <div id="main-title-box">
+        <div id="main-title-box" class="main-title-box">
             <h1>Big title</h1>
         </div>
 
-        <div id="main-title-box">
-            <h2 id="main-title">Lab #2: HTML Practice</h2>
+        <div class="main-title-box">
+            <h2 id="main-title" class="main-title">Lab 1.2: HTML Practice</h2>
         </div>
 
         <div id="client-server">
@@ -40,8 +40,8 @@
             <p>It ensures that every modification will be saved in the history of git so as to blame some workmate for wrong code.</p>
         </div>
 
-        <div id="main-title-box">
-            <h2 id="main-title">Lab #3: Intro CSS and the box model</h2>
+        <div class="main-title-box">
+            <h2 class="main-title">Lab 1.3: Intro CSS and the box model</h2>
         </div>
         
         <div id="calculate-box-model">
@@ -93,5 +93,75 @@
                 <li>Width content: 400px</li>
             </ul>
         </div>
+
+        <div class="main-title-box">
+            <h2 class="main-title">Lab 2.1</h2>
+        </div>
+
+        <div id="nested-list">
+            <h3>Nested list</h3>
+            <ul>
+                <li>First pretty item</li>
+                <li>Second pretty item</li>
+                <li>Third not pretty item
+                    <ul>
+                        <li>First ugly item</li>
+                        <li>Second ugly item</li>
+                        <li>Third ugly item</li>
+                    </ul>
+                </li>
+                <li>Fourth pretty item too</li>
+                <li>Fifth normal item</li>
+            </ul>
+        </div>
+
+        <div id="columns-container">
+            <h3>Columns</h3>
+            <div id="columns">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisl tempus, ultricies velit quis, malesuada libero. Ut molestie eros ac leo dictum, pulvinar malesuada mauris tincidunt. Suspendisse ornare, purus sit amet ultrices sollicitudin, tortor justo vestibulum neque, consectetur posuere mauris augue venenatis urna. Quisque at lobortis odio. Duis vulputate aliquet lacus, non vulputate ex dictum eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius justo quis placerat laoreet. Nulla facilisi.
+                </p>
+                <p>
+                    Ut fermentum fringilla elit a gravida. Donec sagittis quis dui sit amet pharetra. Ut scelerisque fringilla metus sit amet auctor. Cras in dui enim. Vivamus euismod id lorem non vestibulum. Etiam pellentesque ullamcorper lacus rhoncus semper. Pellentesque id eros nisl. Vivamus vel tincidunt dolor, in porttitor purus.
+                </p>
+                <p>
+                    Maecenas vel turpis luctus, pellentesque mi nec, porttitor urna. Integer auctor maximus vestibulum. Etiam ut tincidunt nunc. Nam massa mauris, luctus sit amet placerat sed, pulvinar nec arcu. Praesent varius lacus at eros egestas porttitor. In ornare orci non ante malesuada porta. Nullam laoreet ligula eget nibh semper, vitae fringilla odio congue. In molestie magna ut arcu facilisis, ac aliquet risus tincidunt. Aenean quis euismod turpis, auctor egestas ligula.
+                </p>
+                <p>
+                    Curabitur sit amet neque at purus rutrum maximus. Donec dictum ligula id nisi tempor vestibulum. Nam eleifend dui sed urna hendrerit facilisis. In blandit porttitor dui sit amet accumsan. Pellentesque elementum gravida nibh, eu maximus lorem consequat quis. Sed nisl odio, mattis sed egestas at, rutrum in orci. In blandit nunc elit, ac ornare nibh finibus sed. Nam ullamcorper congue auctor. Etiam nec sapien in turpis elementum sollicitudin sit amet suscipit augue. Duis eu augue nibh.
+                </p>
+                <p>
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam id tortor aliquet, posuere mauris nec, volutpat dolor. Morbi eget tempus ante, eget bibendum tellus. Cras ac ex nec sapien finibus sodales. Ut vel ex nec lorem porttitor egestas vel ut est. Etiam ac enim gravida, viverra urna in, egestas felis. Morbi laoreet at tortor id consequat. Proin ut velit ut ex efficitur suscipit id quis magna. Nullam aliquet tortor libero. Sed elementum et dolor nec commodo. Nam pellentesque, sem quis scelerisque ultricies, risus dui fringilla mi, vitae euismod lectus risus eget nisi. Cras eu tortor eu sapien accumsan scelerisque at sed risus. Integer porttitor ac lacus eu commodo.
+                </p>
+            </div>
+        </div>
+
+        <div id="position-attribute">
+            <h3>The Position attribute</h3>
+            <ol>
+                <li>What does position absolute do?
+                    <ul>
+                        <li>
+                            In this case, the element is removed from the document flow and it is positioned based on its parent element. So, if its <i>left</i> atribute is 0, its position will start in the top left of its parent element affecting the behave of the others elements. (source <a href="https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/">frecodecamp</a>)
+                        </li>
+                    </ul>
+                </li>
+                <li>What does position relative do?
+                    <ul>
+                        <li>
+                            <i>Relative</i> position is the default for this attribute. It positioned based on its normal position. If you set its <i>left</i> attribute to 50px, it will me moved 50px from the last closet element. (source <a href="https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/">freecodecamp</a>)
+                        </li>
+                    </ul>
+                </li>
+                <li>What does position fixed do?
+                    <ul>
+                        <li>
+                            If you have, for instance, a figure with the attribute <i>fixed</i> it will be displayed in your browser regardless of where you scrolled your page. It will overlap any other element with other position attribute, because it is positioned relative to your browser. (source <a href="https://www.w3schools.com/cssref/pr_class_position.asp">w3schools</a>)
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
     </body>
 </html>
