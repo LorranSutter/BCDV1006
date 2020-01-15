@@ -1,0 +1,10 @@
+body{
+    width: 60%;
+    margin-left: 20%;
+}
+
+main {
+    column-count: 3;
+    column-gap: 3em;
+    column-rule: 1px solid;
+}
