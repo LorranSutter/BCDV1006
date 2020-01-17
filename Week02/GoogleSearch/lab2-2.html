@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Week 2.2 Lab: Forms</title>
+        <style>
+            label {
+                display: block;
+                padding-top: 1em;
+                padding-bottom: 0.3em;
+            }
+            input[type=submit] {
+                display: block;
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+            .temp-calculator {
+                border: 1px solid;
+                padding: 1em;
+            }
+            button {
+                margin-top: 1em;
+            }
+        </style>
+
+        <script>
+            function convert() {
+                console.log("Convert");
+                let c = parseFloat(document.getElementById("celsius").value);
+                let f = parseFloat(document.getElementById("fahrenheit").value);
+
+                console.log(c);
+                console.log(f);
+
+                if(isNaN(c) && isNaN(f)){
+                    document.getElementById("fahrenheit").value = "";
+                } else if(isNaN(f)) {
+                    f = c * 9/5 + 32;
+                    document.getElementById("fahrenheit").value = f.toString();
+                } else {
+                    c = (f - 32) * 5/9;
+                    document.getElementById("celsius").value = c.toString();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Search Google!</h3>
+        <form method="get" action="https://www.google.com/search">
+            <label for="q">Do you want to serach for something about star wars???</label>
+            <input type="search" id="q" name="q">
+
+            <fieldset>
+                <legend>More than demo</legend>
+                <label for="your-name">What is your name?</label>
+                <input type="text" id="your-name" name="your-name">
+
+                <label for="your-tel">What is your telephone (format: (416) 555-5555)?</label>
+                <input type="tel" id="your-tel" name="your-tel" pattern="\(\d{3}\) \d{3}-\d{4}">
+
+                <div class="radio">
+                    <label for="yes">Yes
+                        <input type="radio" id="yes" name="question2">
+                    </label>
+                    <label for="no">No
+                        <input type="radio" id="no" name="question2">
+                    </label>
+                    <label for="maybe">Maybe
+                        <input type="radio" id="maybe" name="question2">
+                    </label>
+                </div>
+
+                <label for="Flavor">Flavor</label>
+                <select name="flavor" id="Flavor">
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="strawberry">Strawberry</option>
+                </select>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+
+            <input type="submit" name="submit" id="search" value="Search for SW!!!">
+        </form>
+
+        <div class="temp-calculator">
+            <h3>Conversor</h3>
+            <label for="celsius">Celsius
+                <input type="text" id="celsius">
+            </label>
+            <label for="fahrenheit">Fahrenheit
+                <input type="text" id="fahrenheit">
+            </label>
+            <button onClick="convert()">Convert</button>
+        </div>
+    </body>
+</html>
