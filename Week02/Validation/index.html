@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <title>Lab 2.3</title>
+    </head>
+    <body>
+        <form method="get">
+            <div id="first-input">
+                <label for="invalid">Do you want a banana or a cherry?
+                    <input type="text" name="invalid" id="invalid" pattern="[B|b]anana|[C|c]herry" required>
+                </label>
+                <input type="submit" value="Submit">
+            </div>
+
+            <label for="minmax">MinLength and MaxLenght    
+                <input type="text" name="minmax" id="minmax" minlength="3" maxlength="20" required>
+            </label>
+
+            <label for="range">Choose a number
+                <input type="number" name="range" id="range" min="7" max="36">
+            </label>
+        </form>
+
+        <div class="scene">
+            <div class="cube">
+              <div class="cube-face cube-face-front">front</div>
+              <div class="cube-face cube-face-back">back</div>
+              <div class="cube-face cube-face-right">right</div>
+              <div class="cube-face cube-face-left">left</div>
+              <div class="cube-face cube-face-top">top</div>
+              <div class="cube-face cube-face-bottom">bottom</div>
+            </div>
+        </div>
+
+        <div class="transform-radios">
+            <label for="front">
+                <input type="radio" name="transform" value="front" id="front" checked>
+                Front
+            </label>
+            <label for="back">
+                <input type="radio" name="transform" value="back" id="back">
+                Back
+            </label>
+            <label for="right">
+                <input type="radio" name="transform" value="right" id="right">
+                Right
+            </label>
+            <label for="left">
+                <input type="radio" name="transform" value="left" id="left">
+                Left
+            </label>
+            <label for="top">
+                <input type="radio" name="transform" value="top" id="top">
+                Top
+            </label>
+            <label for="bottom">
+                <input type="radio" name="transform" value="bottom" id="bottom">
+                Bottom
+            </label>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
