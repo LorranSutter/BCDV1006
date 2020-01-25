@@ -1,0 +1,21 @@
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.square-white {
+    background-color: white;
+}
+
+.square-black {
+    background-color: black;
+}
+
+.row {
+    display: block;
+    float: left;
+}
